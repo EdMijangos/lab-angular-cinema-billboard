@@ -1,0 +1,9 @@
+<section>
+  <ul>
+    <li *ngFor="let movie of movies">
+      <h3>Room {{movie.room}}</h3>
+      <a [routerLink]="['movie', movie.id]"><img width="120px" src="{{movie.poster}}" alt="movie-poster"></a>
+      <a [routerLink]="['movie', movie.id]"><h4>{{movie.title}}</h4></a>
+    </li>
+  </ul>
+</section>
